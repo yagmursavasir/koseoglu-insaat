@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>köseoğlu inşaat</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+</head>
+<body>
+    <section class="hero-section">
+        <header class="banner-top">
+        <div class="contact-info">
+            <i class="fas fa-phone"></i>
+            <h4>Telefon: 05*******</h4>
+        </div>
+        </header>
+
+         <header class="banner">
+        <div class="banner-content">
+            <img src="../img/logo.png" alt="logo" class="logo">
+            <h3>Köseoğlu İnşaat</h3>
+        </div>
+
+        <ul class="header-menu">
+            <li><a href="#anasayfa">Anasayfa</a></li>
+            <li><a href="#hakkimizda">Hakkımızda</a></li>
+            <li><a href="#hizmetlerimiz">Hizmetlerimiz</a></li>
+            <li><a href="#konumumuz">Konumumuz</a></li>
+            <li><a href="#iletisim">İletişim</a ></li>
+            
+        </ul>
+
+        
+    </header>
+
+        <section class="slider" id="anasayfa">
+            <div class="slides">
+                <div class="slide">
+                    <img src="../img/slide1.jpg" alt="Slider Image 1">
+                </div>
+                
+                <div class="slide">
+                    <img src="../img/slide2.jpg" alt="Slider Image 2">
+                </div>
+                <div class="slide">
+                    <img src="../img/slide3.jpg" alt="Slider Image 3">
+                </div>
+            </div>
+
+            <div class="slider-text animate-center">
+                <h1>Köseoğlu İnşaat</h1>
+                <p>GİRİŞ CÜMLESİ</p>
+            </div>
+            
+        </section> 
+
+            <div class="slider-nav">
+                <button onclick="goToSlide(0)" class="nav-dot active"></button>
+                <button onclick="goToSlide(1)" class="nav-dot"></button>
+                <button onclick="goToSlide(2)" class="nav-dot"></button>
+            </div>
+        </section>
+
+
+
+    </section>
+    
+   
+
+   
+    
+   <section class="content" id="hakkimizda">
+        
+        <div class="text-content">
+            <h2>Hakkımızda</h2>
+            <p>Köseoğlu İnşaat, 1990 yılından bu yana inşaat sektöründe faaliyet gösteren köklü bir firmadır. 
+            Müşteri memnuniyetini ön planda tutarak, kaliteli ve güvenilir projeler üretmeyi hedefliyoruz.</p>
+            <p>Yılların verdiği deneyimle, modern mimari anlayışını geleneksel değerlerle harmanlayarak, 
+            estetik ve fonksiyonel yapılar inşa ediyoruz.</p>
+        </div>
+        <img src="../img/main.png" alt="foto" class="construction-image">
+    </section>
+
+    <section class="content-info" id="hizmetlerimiz">
+         <div class="service right">
+            <img src="../img/slide1.jpg" alt="konut projeleri">
+            <div class="text">
+            <h2>Konut Projeleri</h2>
+            <p>.....</p>
+            </div>
+        </div>
+        
+        <div class="service left">
+            <img src="../img/ic-mimar.jpg" alt="iç mimarlık">
+            <div class="text">
+            <h2>İç Mimarlık</h2>
+            <p>.....</p>
+            </div>
+        </div>
+        
+        <div class="service right">
+            <img src="../img/pimapen.jpg" alt="pimapen">
+            <div class="text">
+            <h2>Pimapen</h2>
+            <p>.....</p>
+            </div>
+        </div>
+
+        
+       
+        </section>
+
+
+    <section class="map-section" id="konumumuz">
+    <h2>Ofis Konumumuz</h2>
+    <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3027.2888330193337!2d29.117036699999993!3d40.6455631!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14caf3c74658ae0b%3A0xd71930efffce1ba1!2zS8O2c2VvxJ9sdSBJbsWfYWF0ICYgRW1sYWs!5e0!3m2!1str!2str!4v1750888837300!5m2!1str!2str" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</section>
+
+        <footer id="iletisim">
+        <div class="footer-logo">
+            <img src="../img/logo.png" alt="logo" class="footer-logo-image">
+        </div>
+        <h2>Köseoğlu İnşaat İletişim</h2>
+        <p>Telefon: 05*******</p>
+        <p>Email:   ****
+        <p>Adres: **** 
+        <p>Bilgi almak için lütfen bizimle iletişime geçin.
+        </p>
+        <p>&copy;2025 Köseoğlu İnşaat. Tüm hakları saklıdır.</p>
+        <div class="social-buttons">
+            <a href="https://wa.me/905********" target="_blank" class="whatsapp-button">
+                <i class="fab fa-whatsapp"></i> WhatsApp
+            </a>
+            <a href="https://www.instagram.com/kose_ogluinsaat" target="_blank" class="instagram-button">
+                <i class="fab fa-instagram"></i> Instagram
+            </a>
+        </div>
+    
+    </footer>
+    
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  let slideIndex = 0;
+  const slides = document.querySelector('.slides');
+  const totalSlides = document.querySelectorAll('.slide').length;
+  const navDots = document.querySelectorAll('.nav-dot');
+
+  function updateSlide() {
+    slides.style.transform = `translateX(-${slideIndex * 100}%)`;
+    navDots.forEach((dot, i) => {
+      dot.classList.toggle('active', i === slideIndex);
+    });
+  }
+
+  function goToSlide(index) {
+    slideIndex = index;
+    updateSlide();
+    resetInterval();
+  }
+
+  function nextSlide() {
+    slideIndex = (slideIndex + 1) % totalSlides;
+    updateSlide();
+  }
+
+  // Otomatik geçiş için interval ID'si
+  let intervalId = setInterval(nextSlide, 5000);
+
+  // Otomatik geçiş sıfırlama fonksiyonu (manuel tıklamada kullanacağız)
+  function resetInterval() {
+    clearInterval(intervalId);
+    intervalId = setInterval(nextSlide, 5000);
+  }
+
+  // Noktalara (dotlara) tıklanınca manuel geçiş
+  navDots.forEach((dot, i) => {
+    dot.addEventListener('click', () => goToSlide(i));
+  });
+
+  // Başlangıçta göster
+  updateSlide();
+
+
+  // --- SENİN SAYFANDA OLAN DİĞER ANİMASYON VE OBSERVER KODLARINI DA EKLEDİM ---
+
+  // .animate-center için animasyon aktif etme
+  const animatedElems = document.querySelectorAll(".animate-center");
+  animatedElems.forEach(elem => {
+    setTimeout(() => {
+      elem.classList.add("active");
+    }, 100);
+  });
+
+  // Intersection Observer ile görünürlük animasyonu
+  const services = document.querySelectorAll('.service');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.2 });
+
+  services.forEach(service => observer.observe(service));
+});
+</script>
+
+    
+</body>
+</html>
